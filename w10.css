@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html,body{
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+body{
+    background: url(https://img.goodfon.ru/original/1360x768/3/58/windows-10-microsoft-windows-light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.window{
+    height: 265px;
+    width: 511px;
+    margin: 115px auto;
+    background: #ffffff;
+    border: 1px solid #1883d7;
+}
+#br{
+    margin: -28px 0 0 -1px;
+    position: absolute;
+    height: 290px;
+    background-color: #0078d7;
+    width: 511px;
+    z-index: -1;
+    border: #1883d7 1px solid;
+}
+#title__txt{
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 7px;
+    color: white;
+}
+.icon{
+    height: 140px;
+    margin: 20px 29px 20px 7px;
+    width: 140px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.btn{
+    height: 30px;
+    width: 122px;
+    background: #cbcbcb;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.active{
+    background: #aaaaaa;
+}
+.buttons{
+    display: flex;
+    gap: 13px;
+    padding-top: 20px;
+}
+.wrapper{
+    padding: 20px 0 0 10px;
+    display: flex;
+    height: 240px;
+    gap: 30px;
+}

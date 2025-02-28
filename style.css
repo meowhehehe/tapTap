@@ -33,7 +33,7 @@ body{
     align-items: center;
     display: flex;
 }
-.title__txt{
+#title__txt{
     font-family: sans-serif;
     color: white;
     font-weight: 550;
@@ -42,6 +42,7 @@ body{
 .icon{
     height: 150px;
     margin: 20px;
+    width: 150px;
 }
 .content{
     display: flex;

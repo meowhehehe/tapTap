@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html,body{
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+body{
+    background: url(img/meow.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.window{
+    height: 265px;
+    width: 500px;
+    margin: 115px auto;
+    background: #ffffff;
+    border: 1px solid #b5cbe1;
+    box-shadow: 0px 0px 0px 0.5px #789cbf;
+}
+#br{
+    margin: -25px 0 0 -6px;
+    position: absolute;
+    height: 295px;
+    background-color: #76ace8;
+    width: 511px;
+    z-index: -1;
+    border: 1px solid #6298d4;
+}
+#title__txt{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 4px;
+}
+.icon{
+    height: 150px;
+    margin: 20px 29px 20px -2px;
+    width: 150px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.btn{
+    height: 28px;
+    width: 120px;
+    background: linear-gradient(#eeeeee 40%,#d5d5d5 55%);
+    border: 1px solid white;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1.5px #818181;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.active{
+    background: #a0bee8;
+}
+.buttons{
+    display: flex;
+    gap: 13px;
+    padding-top: 20px;
+}
+.wrapper{
+    padding: 20px 0 0 10px;
+    display: flex;
+    height: 240px;
+    gap: 30px;
+}

@@ -38,7 +38,7 @@ body{
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
 }
-.title__txt{
+#title__txt{
     font-family: sans-serif;
     color: white;
     font-weight: 550;
@@ -47,6 +47,7 @@ body{
 .icon{
     height: 150px;
     margin: 20px;
+    width: 150px;
 }
 .content{
     display: flex;
