@@ -57,6 +57,9 @@ body{
     margin-bottom: 10px;
 }
 .active{
+    background: #000000;
+}
+.btn:hover{
     background: #aaaaaa;
 }
 .buttons{

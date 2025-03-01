@@ -2,6 +2,7 @@ let upgToXP = false;
 let upgTo7 = false;
 let upgTo8 = false;
 let upgTo10 = false;
+let upgMeow = false;
 
 const btnUpd = document.getElementById('upd');
 const btnClk = document.getElementById('clk');
@@ -10,8 +11,10 @@ const style = document.getElementById('style');
 const title = document.getElementById('title__txt');
 const version = document.getElementById('version');
 
-
 let win = document.getElementById('place');
+let suhariki = document.getElementById('suhariki');
+
+suhariki.textContent = '5';
 
 function clickUpd(){
     btnUpd.classList.toggle('active');
@@ -39,16 +42,17 @@ btnClk.addEventListener('click', function() {
 btnUpd.addEventListener('click', windowsXP);
 
 function windowsXP(){
-    const price = 5;
+    price = 5;
     if(k>=price && !upgToXP){
         upgToXP = true;
         
+        suhariki.textContent = '10';
+
         k = k - price;
         p.textContent = k;
         
         style.href = 'wXp.css';
-        
-        
+           
         version.textContent = "Microsoft Windows XP"
         
         img.src = 'https://static.wikia.nocookie.net/logopedia/images/7/7b/Internet_Explorer_6.05_SP1_Logo.png';
@@ -67,6 +71,8 @@ function windows7(){
     if(k>=price && !upgTo7){
         upgTo7 = true;
         
+        suhariki.textContent = '20';
+       
         k = k - price;
         p.textContent = k;
         
@@ -97,6 +103,8 @@ function windows8(){
     if(k>=price && !upgTo8){
         upgTo8 = true;
 
+        suhariki.textContent = '40';
+        
         k = k - price;
         p.textContent = k;
 
@@ -121,6 +129,8 @@ function windows10(){
     if(k>=price && !upgTo10){
         upgTo10 = true;
 
+        suhariki.textContent = '100';
+        
         k = k - price;
         p.textContent = k;
 
@@ -136,4 +146,30 @@ function windows10(){
         });
     }
     
+}
+
+btnUpd.addEventListener('click', meow);
+
+function meow(){
+    const price = 100;
+    if(k>=price && !upgMeow){
+        upgMeow = true;
+
+        const woof = document.getElementById('win');
+        woof.style.display = 'none';
+
+        style.href = 'meow.css';
+
+        const cocacola = document.getElementById('chipsi');
+        const kitty = document.createElement('img');
+        
+        const pepsi = document.createElement('p');
+        pepsi.textContent = '??????????';
+        cocacola.appendChild(pepsi);
+        pepsi.id = 'pepsi';
+        
+        kitty.src = 'https://68.media.tumblr.com/c0df6288f72fa72b32fa9712584afcf2/tumblr_oq1wi00ac51vbdodoo1_500.gif';
+        kitty.id = 'kitty';
+        document.body.appendChild(kitty);
+    }   
 }
